@@ -344,6 +344,15 @@ class SfpBase(device_base.DeviceBase):
         """
         raise NotImplementedError
 
+    def set_power(self, mode):
+        """
+        Power enable or disable transciever connected to an Interface.
+
+        Returns:
+            A boolean, True if successful, False if not
+        """
+        raise NotImplementedError
+
     def tx_disable(self, tx_disable):
         """
         Disable SFP TX for all channels
